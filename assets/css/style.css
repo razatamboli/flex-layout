@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;0,400;0,700;1,300&family=Orbitron:wght@700&display=swap');
+
+body{
+    background-color: var(--color-gray);
+    color: var(--color-dark);
+    line-height: 1.5;
+    font-family: 'Asap', sans-serif;
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ########### header css start #########3*/
+
+.header{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header h1{
+    text-transform: uppercase;
+}
+
+.header p{
+    font-style: italic;
+}
+
+.navbar{
+    background-color: var(--color-primary);
+}
+
+.site-info{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li a:link,
+.navbar ul li a:visited{
+    text-transform: capitalize;
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: bold;
+    display: block;
+
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus,
+.navbar ul li a:active{
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+}
+
+.content-area{
+    flex-direction: column;
+}
+
+.main-content-area{
+    padding: 10px;
+}
+
+/*########### posts section css start ###########*/
+.posts{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.posts img{
+    width: 100%;
+    height: 300px;
+    object-fit:cover;
+
+}
+
+.post-content{
+    transform: translateY(-10px);
+    /*margin :-10px*/
+}
+
+.post-content{
+    background-color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+.post-content h2{
+    padding: 20px;
+    text-align: center;
+    background-color: var(--color-primary);
+    text-transform: capitalize;
+    color: var(--color-dark);
+}
+
+.post-content p{
+    padding: 25px;
+    color: var(--color-dark);
+}
+
+
+/*##########css of watch-card section start#########*/
+.watch-card{
+	background-color:var(--color-dark);
+	color:var(--color-white);
+	margin-bottom:20px;
+	display:flex;
+	flex-direction:column;
+}
+
+.watch-img img{
+	width:100%;
+}
+
+.watch-content{
+	padding:20px;
+	font-weight:bold;
+}
+
+.watch-content h3{
+	font-weight:400;
+	text-transform:capitalize;
+	font-size:22px;
+}
+
+.watch-content h3, .watch-content p{
+	margin-bottom:15px;
+}
+
+.watch-content p span{
+	margin-right:10px;
+	font-size:22px;
+}
+
+.watch-content a{
+	text-decoration:underline;
+	color:var(--color-white);
+}
+
+/*####### download now css start########*/
+.download-img img{
+	width:100%;
+}
+
+.download-content{
+	display:flex;
+	flex-direction:column;
+}
+.download-img{
+	background-color:var(--color-dark);
+}
+
+.download-link{
+	padding:20px;
+	background-color:var(--color-dark);
+	color:var(--color-white);
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	
+}
+
+.download-info{
+	background-color:var(--color-white);
+	padding:20px 5px;
+	
+}
+.download-genre {
+    display: flex;
+	flex-wrap:wrap;
+	margin-bottom:15px;
+}
+.download-cast h4, .download-genre h4{
+	flex:0 0 55px;
+	text-transform:capitalize;
+	font-size:15px;
+	align-self:center;
+}
+
+.download-cast {
+    display: flex;
+	flex-wrap:wrap;
+}
+.download-cast img{
+	width:40px;
+	border-radius:50%;
+	margin-right:5px;
+}
+
+.download-rating{
+	background-color:var(--color-primary);
+	display:flex;
+	padding:20px;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+
+/*########## movie gallary css start ###########*/
+.gallary-imgs{
+	display:flex;
+	flex-wrap:wrap;
+	margin-left:-10px;
+}
+.gallary-img{
+	height:350px;
+	flex-grow:1;
+	margin:0 0 10px 10px;
+}
+.gallary-img img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+
+
+.footer{
+	background-color:var(--color-dark);
+	padding:20px;
+	text-align:center;
+	color:var(--color-white);
+	font-size:24px;
+	
+}
+
+/*########## sidebar section css start#############*/
+
+.wedget{
+	padding:10px;
+}
+.wedget-card{
+	background-color:var(--color-white);
+	padding:20px;
+	border-radius:5px;
+	margin-bottom:20px;
+	text-transform:capitalize;
+}
+.wedget-card a:link,
+.wedget-card a:visited{
+	color:var(--color-dark);
+	font-weight:700;
+	padding-left:10px;
+}
+
+.wedget-card h3{
+	margin-bottom:12px;
+}
+
+.wedget-card li{
+	margin-bottom:5px;
+}
+
+
+
+
+@media all and (min-width:768px) {
+    .posts{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .posts .post{
+        width: 49%;
+    }
+	.watch-card{
+		flex-direction:row;
+	}
+	.watch-img{
+		flex:0 0 400px;
+	}
+	.watch-img img{
+	height:100%;
+	object-fit:cover;
+    }
+	.watch-content{
+		align-self:center;
+		padding:30px;
+	}
+	.watch-card:nth-of-type(2) .watch-img{
+		order:1;
+	}
+	.download-content{
+		flex-direction:row;
+	}
+	.download-info{
+		padding:20px;
+		flex-grow:1;
+	}
+	.download-link, .download-rating{
+		flex:0 0 200px;
+	}
+	.gallary-img:nth-child(1),
+	.gallary-img:nth-child(5),
+	.gallary-img:nth-child(9){
+		flex-basis:250px;
+	}
+	.gallary-img:nth-child(2),
+	.gallary-img:nth-child(6),
+	.gallary-img:nth-child(10){
+		flex-basis:325px;
+	}
+	.gallary-img:nth-child(3),
+	.gallary-img:nth-child(7){
+		flex-basis:180px;
+	}
+	.gallary-img:nth-child(4),
+	.gallary-img:nth-child(8){
+		flex-basis:420px;
+	}
+}
+
+
+
+
+
+@media all and (min-width:1180px) {
+	.main-content-area, .wedget{
+		padding:20px;
+	}
+    .navbar ul{
+        display: flex;
+    }
+    .navbar li{
+        flex-grow: 1;
+    }
+    .content-area,
+    .posts{
+        flex-direction: row;
+    }
+    .main-content-area{
+        flex-grow: 1;
+    }
+    .sidebar-section{
+
+        flex: 0 0 400px;
+    }
+    .posts{
+        justify-content: space-between;
+    }
+
+    .posts .post:nth-child(1),
+    .posts .post:nth-child(2){
+        width: 49%;
+    }
+    .posts .post:nth-child(3),
+    .posts .post:nth-child(4),
+    .posts .post:nth-child(5){
+        width: 32%;
+    }
+    .posts .post:last-child{
+        width: 100%;
+    }
+}
